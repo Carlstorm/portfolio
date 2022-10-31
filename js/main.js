@@ -629,7 +629,7 @@ function pagechange(pageTo, pageOn, target, Prevtarget) {
 
                 // document.getElementsByClassName("butimg")[target].parentElement.classList.style.opacity = opacityamount;
                 if (Prevtarget != target) {
-                    document.getElementsByClassName("butimg")[target].src = "../svgs/Cross.svg"
+                    document.getElementsByClassName("butimg")[target].src = "svgs/Cross.svg"
                     if (opacityamount > 0.5) {
                         showtextbut(target);
                     }
@@ -637,16 +637,16 @@ function pagechange(pageTo, pageOn, target, Prevtarget) {
                         document.getElementsByClassName("butimg")[Prevtarget].parentElement.style.opacity = 0.33
                         document.getElementsByClassName("butimg")[Prevtarget].parentElement.style.pointerEvents = "inherit";
                     if (Prevtarget == 1) {
-                        document.getElementsByClassName("butimg")[Prevtarget].src = "../svgs/Port.svg"
+                        document.getElementsByClassName("butimg")[Prevtarget].src = "svgs/Port.svg"
                     } else {
-                        document.getElementsByClassName("butimg")[Prevtarget].src = "../svgs/Omig.svg"
+                        document.getElementsByClassName("butimg")[Prevtarget].src = "svgs/Omig.svg"
                     }
                  }
                 } else {
                     if (target == 0) {
                         document.getElementsByClassName("butimg")[target].src = "svgs/Omig.svg"
                     } else {
-                        document.getElementsByClassName("butimg")[target].src = "../svgs/Port.svg"
+                        document.getElementsByClassName("butimg")[target].src = "svgs/Port.svg"
                     }
                     if (opacityamount > 0.5) {
                         showtextbut(target);
